@@ -1,4 +1,4 @@
-# portfoliov3
+# affinitystrings
 
 ## Project setup
 ```
