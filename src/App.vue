@@ -1,13 +1,14 @@
 <template>
-  <h1>HELLO</h1>
+  <div>
+    <AppHeader />
+    <router-view></router-view>
+  </div>
 </template>
 
-<script>
-
-export default {
-  name: 'App',
-  components: {
-
-  }
-}
+<script setup>
+import AppHeader from './components/AppHeader.vue';
 </script>
+
+<style>
+/* Global styles or App-specific styles can go here */
+</style>
