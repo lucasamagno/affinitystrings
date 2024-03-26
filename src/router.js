@@ -17,12 +17,12 @@ const routes = [
         component: LessonsPage,
     },
     {
-        path: '/booking',
+        path: '/booking-inquiries',
         name: 'Booking',
         component: BookingPage,
     },
     {
-        path: '/contact',
+        path: '/contact-us',
         name: 'Contact',
         component: ContactPage,
     }
