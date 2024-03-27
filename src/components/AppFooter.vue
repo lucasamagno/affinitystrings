@@ -1,8 +1,8 @@
 <template>
     <footer class="footer">
       <div class="footer-logo">
-        <a href="https://facebook.com" target="_blank">
-          <img src="/path-to-your-facebook-logo.svg" alt="Facebook" />
+        <a href="https://www.facebook.com/AffinityStrings" target="_blank" class="footer-logo">
+          <i class="fab fa-facebook-f"></i>
         </a>
       </div>
   
@@ -29,12 +29,12 @@
     align-items: center;
     justify-content: center;
     padding: 2em 0;
-    color: white;
   }
-  
-  .footer-logo img {
-    width: 50px; 
-    height: auto;
+
+  .footer-item {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-family: "Crimson Text", "serif";
   }
   
   .footer-links {
@@ -42,15 +42,24 @@
     justify-content: center;
     margin: 1em 0;
   }
-  
-  .footer-item {
+
+  .footer-item, .footer-logo {
     text-decoration: none;
-    padding: 0.5em 1em;
+    color: black;
+    font-size: 1.1rem;
   }
-  
+
+  .footer-item:visited, .footer-logo:visited {
+    color: black;
+  }
+
+  .footer-item:hover {
+    text-decoration: underline;
+  }
+
   .footer-copyright {
-    font-size: 0.75em;
-    margin-top: 1em;
+    font-size: 82%;
+    font-family: "Nunito", "serif";
   }
   </style>
   

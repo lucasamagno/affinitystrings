@@ -31,6 +31,7 @@
 .navbar-logo:visited, .navbar-item:visited {
   color: black;
 }
+
 .navbar-logo {
   font-size: 2.15rem;
 }
