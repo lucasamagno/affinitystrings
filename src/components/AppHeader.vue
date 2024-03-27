@@ -24,13 +24,25 @@
 
 .navbar-logo, .navbar-item {
   text-decoration: none;
+  color: black; 
+  font-family: "Crimson Text", serif;
 }
 
+.navbar-logo:visited, .navbar-item:visited {
+  color: black;
+}
 .navbar-logo {
-  
+  font-size: 2.15rem;
 }
 
 .navbar-item {
   padding: 0.5em 1em;
+  font-size: 1.3rem;
 }
+
+.navbar-item:hover {
+  text-decoration: underline;
+}
+
+
 </style>
