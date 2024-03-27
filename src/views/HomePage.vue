@@ -1,14 +1,12 @@
 <template>
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home Page</p>
-    </div>
-  </template>
-  
-  <script setup>
+  <div>
+    <h1>Welcome to Affinity Strings</h1>
+  </div>
+</template>
 
-  </script>
-  
-  <style>
-  </style>
+<script setup>
+</script>
+
+<style scoped>
+</style>
   

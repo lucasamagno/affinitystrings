@@ -12,5 +12,12 @@ import AppFooter from './components/AppFooter.vue';
 </script>
 
 <style>
-/* Global styles or App-specific styles can go here */
+h1 {
+  font-size: 3.4rem;
+  font-family: "Crimson Text", "serif";
+  font-weight: normal;
+  text-align: center;
+}
+
+
 </style>
