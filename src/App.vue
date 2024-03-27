@@ -19,5 +19,20 @@ h1 {
   text-align: center;
 }
 
+h2 {
+
+
+}
+
+h3 { 
+
+}
+
+p {
+  font-family: "Nunito", "serif";
+  font-size: 16px;
+  color: #434a56
+}
+
 
 </style>
