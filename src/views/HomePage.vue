@@ -3,6 +3,8 @@
     <h1>Welcome to Affinity Strings</h1>
     <p class="intro">Affinity Strings was founded by Sherri and John Marttila to provide professional, convenient, and friendly string ensemble services in Michigan’s lower peninsula. Musicians affiliated with Affinity Strings Ensembles are highly experienced professional musicians who have a long history of performing with beautiful success.</p>
 
+    <ImageCarousel />
+
     <h1>About Us</h1>
     <p>Sherri Marttila has been an avid violinist since the age of nine. She has completed educational rigors at Interlochen Arts Academy, the Congress of Strings (New York), and the University of Michigan. She holds a Bachelor’s degree in Violin Performance.</p>
     <p>Sherri is the Concertmaster for the Oakland Symphony (OS) and the Warren Symphony (WS). She also performs in the violin section with the Great Lakes Chamber Orchestra, Macomb Symphony, Flint Symphony, Saginaw Bay Symphony, Midland Symphony, Traverse Symphony, Lansing Symphony and Detroit Opera Theater. Along with her performing responsibilities, she is the Orchestra Personnel Manager for the OS, the WS, the Great Lakes Chamber Orchestra and the Macomb Symphony.</p>
@@ -15,6 +17,7 @@
 </template>
 
 <script setup>
+import ImageCarousel from '@/components/ImageCarousel.vue';
 </script>
 
 <style scoped>
@@ -26,8 +29,8 @@
 
 @media (max-width: 600px) {
   .intro {
-    margin: 20px 10px; /* Adjusts margin for smaller screens */
-    max-width: 95%; /* Allows the paragraph to take up more width on small screens */
+    margin: 20px 10px; 
+    max-width: 95%; 
   }
 }
 </style>
