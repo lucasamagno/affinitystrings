@@ -1,15 +1,15 @@
 <template>
   <div class="carousel">
     <button @click="prev" class="arrow left">&lt;</button>
-    <div class="images" :style="{ transform: `translateX(${-currentIndex * 100}%)` }">
-      <img v-for="(image, index) in images" :src="image" :key="index">
-    </div>
+    <transition name="fade" mode="out-in">
+      <img :src="currentImage" class="carousel-image" :key="currentIndex">
+    </transition>
     <button @click="next" class="arrow right">&gt;</button>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const images = ref([
   require('@/assets/sherriPlus1.jpeg'),
@@ -33,26 +33,31 @@ const next = () => {
 const prev = () => {
   currentIndex.value = (currentIndex.value - 1 + images.value.length) % images.value.length;
 };
+
+const currentImage = ref(images.value[currentIndex.value]);
+
+watch(currentIndex, () => {
+  currentImage.value = images.value[currentIndex.value];
+});
 </script>
 
 <style scoped>
 .carousel {
+  display: flex; 
+  justify-content: center; 
   position: relative;
-  width: 75%; /* Adjust to take up 75% of the screen */
-  margin: 0 auto; /* Center the carousel horizontally */
+  width: 50%; 
+  height: 500px; 
+  margin: 0 auto; 
   overflow: hidden;
-  background: #f0f0f0; /* Add a background color for better visibility */
+  background: #f0f0f0;
 }
 
-.images {
-  display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
-}
-
-.images img {
-  width: 100%;
-  height: auto;
+.carousel-image {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
 }
 
 .arrow {
@@ -72,5 +77,13 @@ const prev = () => {
 
 .arrow.right {
   right: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
