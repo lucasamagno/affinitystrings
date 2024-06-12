@@ -7,7 +7,7 @@
 
     <div class="grid-container">
       <div class="grid-item">
-        <img src="sherri_image_url" alt="Sherri Marttila">
+        <img :src=longVerticalImage alt="Sherri Marttila" class="sherri_headshot">
         <div class="text">
           <h2>Sherri Marttila</h2>
           <p>Sherri Marttila has been an avid violinist since the age of nine. She has completed educational rigors at Interlochen Arts Academy, the Congress of Strings (New York), and the University of Michigan. She holds a Bachelor’s degree in Violin Performance.</p>
@@ -24,7 +24,7 @@
           <p>John Marttila started on violin and viola in the Okemos Suzuki string program and public school orchestras, from which he was awarded the Marianne Masterson Memorial Award for his contributions to the orchestra in his senior year. He went on to earn his music degree as a string education specialist from Michigan State University, a Master’s degree in educational technology from Central Michigan University, and he currently balances his career as a public school teacher with his active music performance schedule. </p>
           <p>Aside from performing with Affinity Strings ensembles, John has also performed with the Saginaw Bay Symphony, the Oakland Symphony, the Fort Street Chamber Orchestra, the Warren Symphony Orchestra, the Midland Symphony and has performed with various artists such as Joshua Bell, Aretha Franklin, Josh Grobin, Sarah McLachlan, Michael W. Smith, Alexander Zonjic, Citizen Zero, and Celtic Women. He also performed with the Game of Thrones concert series with the Composer and Director, Ramin Djawdi. </p>
         </div>
-        <img src="john_image_url" alt="John Marttila">
+        <img :src=johnViolaImage alt="John Marttila" class="john_headshot">
       </div>
     </div>
   </div>
@@ -32,6 +32,8 @@
 
 <script setup>
 import ImageCarousel from '@/components/ImageCarousel.vue';
+import longVerticalImage from '@/assets/longvertical.jpeg';
+import johnViolaImage from '@/assets/John_Viola.jpeg';
 </script>
 
 <style scoped>
@@ -39,9 +41,7 @@ import ImageCarousel from '@/components/ImageCarousel.vue';
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 50px 100px;
 }
 
 .grid-item {
@@ -51,6 +51,7 @@ import ImageCarousel from '@/components/ImageCarousel.vue';
 
 .text {
   max-width: 80%;
+  margin: 0px 40px;
 }
 
 .text h2 {
@@ -66,6 +67,14 @@ img {
   text-align: center;
   margin: 20px auto; 
   max-width: 60%; 
+}
+
+.sherri_headshot {
+  max-width: 350px;
+}
+
+.john_headshot {
+  width: 600px;
 }
 
 @media (max-width: 600px) {
