@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="content-container">
     <h1>Lessons</h1>
     <p>Sherri Marttila has taught music for over 30 years with students from age 4 to adult and beginning through advanced violin and viola. She also taught her own children to play violin!</p>
+
+    <hr>
 
     <h1>Tuition & Policies</h1>
     <p>Violin lessons are one-on-one instruction based on the student's skill level and pace of study. Individual lessons are available for students ages 4 and older. Beginning through advanced level training is offered. The Suzuki method and traditional methods are utilized with a strong emphasis on note reading skills.</p>
@@ -12,6 +14,8 @@
     <p>The tuition amount is typically one month of lessons paid in advance. However some months may have only 3 lessons due to holiday schedules and some months may have 5 lessons.</p>
     <p>Students are expected to attend lessons weekly throughout the school year. The reserved lesson time will be cancelled if a student accumulates 2 or more absences per month. Payment credits resulting from a student absence will no longer be carried over to the next month's balance and no refunds will be given.</p>
     <p>Make up lessons will be limited to one excused student absence per month. Makeups will be available on Fridays and some week nights. Make up lessons may also be scheduled during the studio breaks. There will be no makeups allowed for no shows or lessons cancelled with less than 24 hour notice.</p>
+
+    <hr>
 
     <h1>Why Violin?</h1>
     <p>A violin education is one option of incorporating music education in the daily life of your child. Starting violin at an earlier age is certainly possible with the many different sizes of violins available. Children that are able to recognize the letters A, D, E and G and the numbers 1 – 4, are ready to begin violin lessons. Mrs. Marttila has taught students as young as 3 years old, including her own children. Her daughter started violin training at age 3.5 and continues to play the violin and her son began at age 5.</p>
@@ -31,16 +35,18 @@
     <h2>6 - It introduces children to other cultures.</h2>
     <p>By learning about and playing a variety of instruments, kids can discover how music plays a critical role in other cultures. For instance, bongos and timbales may introduce children to African and Cuban styles of music. Although the modern-day violin has roots in Italy, learning to play it exposes children to classical music popularized by German and Austrian musicians. Versatile instruments, such as the violin and piano, can accompany a wide repertoire of styles, including classical and jazz (which originated in the American South). It’s important to familiarize children with other cultures at a young age because this fosters open-mindedness about worlds and traditions beyond the ones they know.</p>
 
+    <hr>
+
     <h1>FAQs</h1>
     <p><strong>1. Where is your studio? Where do you teach?</strong></p>
     <p>My studio is located in my home in Davison, MI.</p>
     <p><strong>2. Where do I get a violin? Should I buy or rent?</strong></p>
     <p>I would recommend renting a violin before purchasing. The retailers below will allow rental money to be credited towards a purchase.</p>
-    <ul> <!-- I need to add links to the violin shops here-->
-      <li>Mark Schwartz Violins</li>
-      <li>Shar Music</li>
-      <li>Wilson Fine Violins</li>
-      <li>Psarianos Violins</li>
+    <ul>
+      <li><a href="https://www.markschwartzviolins.com/">Mark Schwartz Violins</a></li>
+      <li><a href="https://www.sharmusic.com/">Shar Music</a></li>
+      <li><a href="https://www.wilsonfineviolins.com/">Wilson Fine Violins</a></li>
+      <li><a href="https://psarianosviolins.com/">Psarianos Violins</a></li>
     </ul>
     <p><strong>3. What ages do you teach?</strong></p>
     <p>Students in my studio start lessons as young as 3 years old, with parental supervision. Students of all ages study in my studio, including adult beginners.</p>
@@ -52,12 +58,13 @@
     <p>It is not necessary that the parent play a musical instrument prior to coming to my studio. Parents of young children will find that it is helpful to their child if they learn the basics right along with the child so that they can help their child practice each day at home.</p>
     <p><strong>7. How much practice time is expected of my child?</strong></p>
     <p>Students are expected to practice each day unless they are ill. The amount of time expected per day is in part age dependent. Careful practice each day, with attention to detail and correct technique being utilized are concepts which are emphasized during lessons.</p>
-    <!-- I need to link the youtube video to here-->
-    <p><strong>This link will take you to a YouTube video designed to help any student of any age appreciate the benefits of practicing: Ted ed effective practice</strong></p>
+    <p><strong>This link will take you to a YouTube video designed to help any student of any age appreciate the benefits of practicing: <a href="https://www.youtube.com/watch?v=f2O6mQkFiiw">Ted ed effective practice</a></strong></p>
     <p><strong>8. What amount of parental involvement is needed?</strong></p>
     <p>Young students require parental supervision when they practice. As a child gets older, the child generally becomes more responsible and begins to practice independently. The age at which a child takes full responsibility for their practicing is determined on an individual basis. Students of all ages certainly benefit from the positive attitude and encouragement provided by their parents. </p>
     <p><strong>9. How may I help my child be successful while studying violin?</strong></p>
     <p>Consistent daily practice, reasonable amount of daily practice time, quality of practice time, parental involvement/supervision of practice sessions, attendance at weekly lessons and recitals, praise and positive encouragement from the child’s parents and teacher.</p>
+
+    <hr>
 
     <h1>Student Successes</h1>
     <p>Students in Sherri’s studio have won competitions, prizes, and been honored in many ways for their excellence in violin and viola playing, including…</p>
@@ -75,16 +82,31 @@
     <hr>
 
     <h1>Location</h1>
-    <!-- I need to includr the google map loading here. -->
-
-    <p>The home studio is conveniently located in Davison near M-15 and I-69.</p>
+    <img :src=locationImage class="location-image"/>
+    <p class="location-sub">The home studio is conveniently located in Davison near M-15 and I-69.</p>
 
   </div>
 </template>
 
 <script setup>
+import locationImage from '@/assets/home-location.png';
 </script>
 
 <style scoped>
+.content-container {
+  margin: 0 auto; 
+  width: 50%; 
+}
+
+.location-image {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.location-sub {
+  text-align: center;
+}
+
 </style>
   

@@ -20,7 +20,9 @@ h1 {
 }
 
 h2 {
-
+  font-family: "Crimson Text", "serif";
+  font-weight: normal;
+  font-size: 2.0rem;
 
 }
 
@@ -28,7 +30,7 @@ h3 {
 
 }
 
-p {
+p, li{
   font-family: "Nunito", "serif";
   font-size: 16px;
   color: #434a56
