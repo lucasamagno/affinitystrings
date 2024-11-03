@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-container">
     <h1>Booking Inquiries</h1>
     <p>Affinity Strings provides experienced professional musicians, with a wide variety of ensemble options, for just about any occasion. All musicians affiliated with Affinty Strings are experienced professionals who will add a polished touch of class to your special occasion.</p>
     <!-- include header image-->
@@ -35,7 +35,7 @@
     <h2>Quartets</h2>
 
     <p>A traditional wedding with a quartet, for example, might include J.S Bach’s Air on G for a wedding party processional:</p>
-    <!--Audio clip needs to go here-->
+    <AudioPlayer src="https://example.com/path-to-your-audio-file.mp3" title="Sample Track" />
     <p>J.S. Bach’s Air on G</p>
 
     <p>Pachelbel’s for the entrance of the bride:</p>
@@ -131,8 +131,16 @@
 </template>
 
 <script setup>
+import AudioPlayer from '@/components/AudioPlayer.vue';
 </script>
 
 <style scoped>
+.content-container {
+  margin: 0 auto; 
+  width: 50%; 
+}
+
+
 </style>
+
   
